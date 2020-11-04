@@ -1,6 +1,10 @@
-# **Depiction:**
+# **Description:**
 This plugin you can give vehicle with custom or random plate number into player's garage with command
 also you can delete a vehicle by plate
+
+# **Edit's by jorrit:**
+- Made script compatible for latest ESX (v1 Final)
+- Fixed some other stuff
 
 # **Commands:**
 **In game:** (Only admin or superadmin can do this)
