@@ -2,7 +2,7 @@ ESX = nil
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
 --give car with a random plate- 1: playerID 2: carModel (3: plate)
-TriggerEvent('es:addGroupCommand', 'givecar', 'admin', function(source, args, user)
+ESX.RegisterCommand('givecar', 'admin', function(source, args, user)
 	if args[1] == nil or args[2] == nil then
 		TriggerClientEvent('esx:showNotification', source, '~r~/givecar [playerID] [carModel] <plate>')
 	elseif args[3] ~= nil then
@@ -45,7 +45,7 @@ RegisterCommand('_givecar', function(source, args)
 	end
 end)
 
-TriggerEvent('es:addGroupCommand', 'delcarplate', 'admin', function(source, args, user)	
+ESX.RegisterCommand('delcarplate', 'admin', function(source, args, user)
 	if args[1] == nil then
 		TriggerClientEvent('esx:showNotification', source, '~r~/delcarplate [plate]')
 	else
